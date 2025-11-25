@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Compassion Buenavista - Santa Cruz, Bolivia</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes-fum/FUMH.jpeg') no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #c0392b;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #b3d1ef;
+        }
+        
+        /* Programs Grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .program-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="imagenes-fum/fundacion.jpg" alt="Logo FUMH" style="height: 80px;">
+
+                <div class="logo">FUMH Buenavista</div>
+                
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#ayudar">Cómo Ayudar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Transformando Vidas con el Amor de Cristo</h1>
+            <p>FUNDACION MONTE HOREB BuenaVista - Santa Cruz - Bolivia</p>
+            <a href="#ayudar" class="btn">Únete a Nuestra Misión</a>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p>Por más de 18 años, hemos servido como centro de Compassion International en BuenaVista, Santa Cruz, Bolivia, dedicados a liberar a los niños de la pobreza espiritual, económica, social y física.</p>
+                
+                <h3 style="margin: 2rem 0 1rem 0;">Nuestra Misión</h3>
+                <p>Guiar a niños y adolescentes hacia un encuentro personal con Jesucristo, proporcionándoles educación, cuidado integral y desarrollo de habilidades para la vida.</p>
+                
+                <h3 style="margin: 2rem 0 1rem 0;">Nuestra Visión</h3>
+                <p>Ver a cada niño convertido en un adulto responsable, autosuficiente y comprometido con su comunidad y con Dios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programas Section -->
+    <section id="programas" style="background: #162e46;">
+        <div class="container">
+            <h2 class="section-title">Nuestros Programas</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>👦🏽 Programa Infantil</h3>
+                    <p>Atención integral para niños de 3-11 años con educación cristiana, refuerzo escolar y alimentación nutritiva.</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>👨🏽‍🎓 Programa Adolescentes</h3>
+                    <p>Formación en valores, discipulado cristiano y desarrollo de habilidades para jóvenes de 12-18 años.</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>👨‍👩‍👧‍👦 Escuela para Padres</h3>
+                    <p>Capacitación y apoyo espiritual para familias, fortaleciendo los lazos familiares desde principios cristianos.</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>📚 Apoyo Educativo</h3>
+                     <p style="text-align: center;">Tutorías, materiales escolares y seguimiento académico personalizado para cada niño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Ayudar Section -->
+    <section id="ayudar">
+        <div class="container">
+            <h2 class="section-title">Cómo Puedes Ayudar</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>🙏 Oración</h3>
+                    <p>Únete a nuestra cadena de oración por los niños y sus familias.</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>👥 Voluntariado</h3>
+                    <p>Dona tu tiempo y talentos para servir en nuestros programas.</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>💝 Donaciones</h3>
+                    <p>Contribuye con recursos para materiales, alimentos y mejoras de infraestructura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <p><strong>📍 Dirección:</strong> BuenaVista, Santa Cruz - Bolivia</p>
+                <p><strong>📞 Teléfono:</strong> 74667906</p>
+                <p><strong>📧 Email:</strong>choredaza2709@gmail.com </p>
+                <p><strong>⏰ Horario de atención:</strong> Lunes a Viernes 8:00 - 17:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Centro Compassion Buenavista - Santa Cruz, Bolivia. Todos los derechos reservados.</p>
+            <p style="margin-top: 1rem;">Ministerio afiliado a Compassion International</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para los enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
